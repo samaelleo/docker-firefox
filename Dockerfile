@@ -11,7 +11,7 @@ COPY membarrier_check.c .
 RUN apk --no-cache add build-base linux-headers
 RUN gcc -static -o membarrier_check membarrier_check.c
 RUN strip membarrier_check
-lknlknl
+
 # Pull base image.
 FROM jlesage/baseimage-gui:alpine-3.21-v4.6.7
 
